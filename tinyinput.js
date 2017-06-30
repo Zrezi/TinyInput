@@ -1,4 +1,4 @@
-var INPUT = (function() {
+var TINYINPUT = (function() {
 	
 	/**
 	 * Boolean value to preventDefault() the input actions.
@@ -119,7 +119,7 @@ var INPUT = (function() {
 			flaggedButtons[i] = false;
 		}
 		
-		INPUT.KEYSTRINGS = {
+		TINYINPUT.KEYSTRINGS = {
 			"backspace":       8,
 			"tab":             9,
 			"enter":          13,
@@ -223,116 +223,116 @@ var INPUT = (function() {
 			"apostrophe":    222
 		};
 		
-		INPUT.KEY_BACKSPACE            =   8;
-		INPUT.KEY_TAB                  =   9;
-		INPUT.KEY_ENTER                =  13;
-		INPUT.KEY_SHIFT                =  16;
-		INPUT.KEY_CTRL                 =  17;
-		INPUT.KEY_ALT                  =  18;
-		INPUT.KEY_PAUSE_BREAK          =  19;
-		INPUT.KEY_CAPS_LOCK            =  20;
-		INPUT.KEY_ESC                  =  27;
-		INPUT.KEY_SPACE                =  32;
-		INPUT.KEY_PAGE_UP              =  33;
-		INPUT.KEY_PAGE_DOWN            =  34;
-		INPUT.KEY_END                  =  35;
-		INPUT.KEY_HOME                 =  36;
-		INPUT.KEY_LEFT                 =  37;
-		INPUT.KEY_UP                   =  38;
-		INPUT.KEY_RIGHT                =  39;
-		INPUT.KEY_DOWN                 =  40;
-		INPUT.KEY_INSERT               =  45;
-		INPUT.KEY_DELETE               =  46;
-		INPUT.KEY_0                    =  48;
-		INPUT.KEY_1                    =  49;
-		INPUT.KEY_2                    =  50;
-		INPUT.KEY_3                    =  51;
-		INPUT.KEY_4                    =  52;
-		INPUT.KEY_5                    =  53;
-		INPUT.KEY_6                    =  54;
-		INPUT.KEY_7                    =  55;
-		INPUT.KEY_8                    =  56;
-		INPUT.KEY_9                    =  57;
-		INPUT.KEY_A                    =  65;
-		INPUT.KEY_B                    =  66;
-		INPUT.KEY_C                    =  67;
-		INPUT.KEY_D                    =  68;
-		INPUT.KEY_E                    =  69;
-		INPUT.KEY_F                    =  70;
-		INPUT.KEY_G                    =  71;
-		INPUT.KEY_H                    =  72;
-		INPUT.KEY_I                    =  73;
-		INPUT.KEY_J                    =  74;
-		INPUT.KEY_K                    =  75;
-		INPUT.KEY_L                    =  76;
-		INPUT.KEY_M                    =  77;
-		INPUT.KEY_N                    =  78;
-		INPUT.KEY_O                    =  79;
-		INPUT.KEY_P                    =  80;
-		INPUT.KEY_Q                    =  81;
-		INPUT.KEY_R                    =  82;
-		INPUT.KEY_S                    =  83;
-		INPUT.KEY_T                    =  84;
-		INPUT.KEY_U                    =  85;
-		INPUT.KEY_V                    =  86;
-		INPUT.KEY_W                    =  87;
-		INPUT.KEY_X                    =  88;
-		INPUT.KEY_Y                    =  89;
-		INPUT.KEY_Z                    =  90;
-		INPUT.KEY_WINDOWS              =  91;
-		INPUT.KEY_RIGHT_CLICK          =  93;
-		INPUT.KEY_NUMPAD_0             =  96;
-		INPUT.KEY_NUMPAD_1             =  97;
-		INPUT.KEY_NUMPAD_2             =  98;
-		INPUT.KEY_NUMPAD_3             =  99;
-		INPUT.KEY_NUMPAD_4             = 100;
-		INPUT.KEY_NUMPAD_5             = 101;
-		INPUT.KEY_NUMPAD_6             = 102;
-		INPUT.KEY_NUMPAD_7             = 103;
-		INPUT.KEY_NUMPAD_8             = 104;
-		INPUT.KEY_NUMPAD_9             = 105;
-		INPUT.KEY_NUMPAD_STAR          = 106;
-		INPUT.KEY_NUMPAD_PLUS          = 107;
-		INPUT.KEY_NUMPAD_MINUS         = 109;
-		INPUT.KEY_NUMPAD_PERIOD        = 110;
-		INPUT.KEY_NUMPAD_FORWARD_SLASH = 111;
-		INPUT.KEY_F1                   = 112;
-		INPUT.KEY_F2                   = 113;
-		INPUT.KEY_F3                   = 114;
-		INPUT.KEY_F4                   = 115;
-		INPUT.KEY_F5                   = 116;
-		INPUT.KEY_F6                   = 117;
-		INPUT.KEY_F7                   = 118;
-		INPUT.KEY_F8                   = 119;
-		INPUT.KEY_F9                   = 120;
-		INPUT.KEY_F10                  = 121;
-		INPUT.KEY_F11                  = 122;
-		INPUT.KEY_F12                  = 123;
-		INPUT.KEY_NUM_LOCK             = 144;
-		INPUT.KEY_SCROLL_LOCK          = 145;
-		INPUT.KEY_COMPUTER             = 182;
-		INPUT.KEY_CALCULATOR           = 183;
-		INPUT.KEY_SEMICOLON            = 186;
-		INPUT.KEY_EQUALS               = 187;
-		INPUT.KEY_COMMA                = 188;
-		INPUT.KEY_DASH                 = 189;
-		INPUT.KEY_PERIOD               = 190;
-		INPUT.KEY_FORWARD_SLASH        = 191;
-		INPUT.KEY_TICK                 = 192;
-		INPUT.KEY_SQUARE_LEFT          = 219;
-		INPUT.KEY_BACKSLASH            = 220;
-		INPUT.KEY_SQUARE_RIGHT         = 221;
-		INPUT.KEY_APOSTROPHE           = 222;
+		TINYINPUT.KEY_BACKSPACE            =   8;
+		TINYINPUT.KEY_TAB                  =   9;
+		TINYINPUT.KEY_ENTER                =  13;
+		TINYINPUT.KEY_SHIFT                =  16;
+		TINYINPUT.KEY_CTRL                 =  17;
+		TINYINPUT.KEY_ALT                  =  18;
+		TINYINPUT.KEY_PAUSE_BREAK          =  19;
+		TINYINPUT.KEY_CAPS_LOCK            =  20;
+		TINYINPUT.KEY_ESC                  =  27;
+		TINYINPUT.KEY_SPACE                =  32;
+		TINYINPUT.KEY_PAGE_UP              =  33;
+		TINYINPUT.KEY_PAGE_DOWN            =  34;
+		TINYINPUT.KEY_END                  =  35;
+		TINYINPUT.KEY_HOME                 =  36;
+		TINYINPUT.KEY_LEFT                 =  37;
+		TINYINPUT.KEY_UP                   =  38;
+		TINYINPUT.KEY_RIGHT                =  39;
+		TINYINPUT.KEY_DOWN                 =  40;
+		TINYINPUT.KEY_INSERT               =  45;
+		TINYINPUT.KEY_DELETE               =  46;
+		TINYINPUT.KEY_0                    =  48;
+		TINYINPUT.KEY_1                    =  49;
+		TINYINPUT.KEY_2                    =  50;
+		TINYINPUT.KEY_3                    =  51;
+		TINYINPUT.KEY_4                    =  52;
+		TINYINPUT.KEY_5                    =  53;
+		TINYINPUT.KEY_6                    =  54;
+		TINYINPUT.KEY_7                    =  55;
+		TINYINPUT.KEY_8                    =  56;
+		TINYINPUT.KEY_9                    =  57;
+		TINYINPUT.KEY_A                    =  65;
+		TINYINPUT.KEY_B                    =  66;
+		TINYINPUT.KEY_C                    =  67;
+		TINYINPUT.KEY_D                    =  68;
+		TINYINPUT.KEY_E                    =  69;
+		TINYINPUT.KEY_F                    =  70;
+		TINYINPUT.KEY_G                    =  71;
+		TINYINPUT.KEY_H                    =  72;
+		TINYINPUT.KEY_I                    =  73;
+		TINYINPUT.KEY_J                    =  74;
+		TINYINPUT.KEY_K                    =  75;
+		TINYINPUT.KEY_L                    =  76;
+		TINYINPUT.KEY_M                    =  77;
+		TINYINPUT.KEY_N                    =  78;
+		TINYINPUT.KEY_O                    =  79;
+		TINYINPUT.KEY_P                    =  80;
+		TINYINPUT.KEY_Q                    =  81;
+		TINYINPUT.KEY_R                    =  82;
+		TINYINPUT.KEY_S                    =  83;
+		TINYINPUT.KEY_T                    =  84;
+		TINYINPUT.KEY_U                    =  85;
+		TINYINPUT.KEY_V                    =  86;
+		TINYINPUT.KEY_W                    =  87;
+		TINYINPUT.KEY_X                    =  88;
+		TINYINPUT.KEY_Y                    =  89;
+		TINYINPUT.KEY_Z                    =  90;
+		TINYINPUT.KEY_WINDOWS              =  91;
+		TINYINPUT.KEY_RIGHT_CLICK          =  93;
+		TINYINPUT.KEY_NUMPAD_0             =  96;
+		TINYINPUT.KEY_NUMPAD_1             =  97;
+		TINYINPUT.KEY_NUMPAD_2             =  98;
+		TINYINPUT.KEY_NUMPAD_3             =  99;
+		TINYINPUT.KEY_NUMPAD_4             = 100;
+		TINYINPUT.KEY_NUMPAD_5             = 101;
+		TINYINPUT.KEY_NUMPAD_6             = 102;
+		TINYINPUT.KEY_NUMPAD_7             = 103;
+		TINYINPUT.KEY_NUMPAD_8             = 104;
+		TINYINPUT.KEY_NUMPAD_9             = 105;
+		TINYINPUT.KEY_NUMPAD_STAR          = 106;
+		TINYINPUT.KEY_NUMPAD_PLUS          = 107;
+		TINYINPUT.KEY_NUMPAD_MINUS         = 109;
+		TINYINPUT.KEY_NUMPAD_PERIOD        = 110;
+		TINYINPUT.KEY_NUMPAD_FORWARD_SLASH = 111;
+		TINYINPUT.KEY_F1                   = 112;
+		TINYINPUT.KEY_F2                   = 113;
+		TINYINPUT.KEY_F3                   = 114;
+		TINYINPUT.KEY_F4                   = 115;
+		TINYINPUT.KEY_F5                   = 116;
+		TINYINPUT.KEY_F6                   = 117;
+		TINYINPUT.KEY_F7                   = 118;
+		TINYINPUT.KEY_F8                   = 119;
+		TINYINPUT.KEY_F9                   = 120;
+		TINYINPUT.KEY_F10                  = 121;
+		TINYINPUT.KEY_F11                  = 122;
+		TINYINPUT.KEY_F12                  = 123;
+		TINYINPUT.KEY_NUM_LOCK             = 144;
+		TINYINPUT.KEY_SCROLL_LOCK          = 145;
+		TINYINPUT.KEY_COMPUTER             = 182;
+		TINYINPUT.KEY_CALCULATOR           = 183;
+		TINYINPUT.KEY_SEMICOLON            = 186;
+		TINYINPUT.KEY_EQUALS               = 187;
+		TINYINPUT.KEY_COMMA                = 188;
+		TINYINPUT.KEY_DASH                 = 189;
+		TINYINPUT.KEY_PERIOD               = 190;
+		TINYINPUT.KEY_FORWARD_SLASH        = 191;
+		TINYINPUT.KEY_TICK                 = 192;
+		TINYINPUT.KEY_SQUARE_LEFT          = 219;
+		TINYINPUT.KEY_BACKSLASH            = 220;
+		TINYINPUT.KEY_SQUARE_RIGHT         = 221;
+		TINYINPUT.KEY_APOSTROPHE           = 222;
 		
-		INPUT.BUTTONSTRINGS = {
+		TINYINPUT.BUTTONSTRINGS = {
 			"left":   0,
 			"middle": 1,
 			"right":  2
 		}
 		
-		INPUT.BUTTON_LEFT   = 0;
-		INPUT.BUTTON_MIDDLE = 1;
-		INPUT.BUTTON_RIGHT  = 2;
+		TINYINPUT.BUTTON_LEFT   = 0;
+		TINYINPUT.BUTTON_MIDDLE = 1;
+		TINYINPUT.BUTTON_RIGHT  = 2;
 	}
 	
 	/**
@@ -346,7 +346,7 @@ var INPUT = (function() {
 	function getValidKey(key) {
 		var keyvalue = -1;
 		if (typeof key === "string") {
-			keyvalue = INPUT.KEYSTRINGS[key];
+			keyvalue = TINYINPUT.KEYSTRINGS[key];
 			if (!keyvalue) {
 				throw new Error("Key \"" + key + "\" is not valid");
 				return -1;
@@ -371,7 +371,7 @@ var INPUT = (function() {
 	*/
 	function getValidButton(button) {
 		if (typeof button === "string") {
-			button = INPUT.BUTTONSTRINGS[button];
+			button = TINYINPUT.BUTTONSTRINGS[button];
 		}
 		if ((-1 < button && button < 3) == false) {
 			throw new Error("Unknown button: " + button);
@@ -471,7 +471,7 @@ var INPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (INPUT.keyHeld(arguments[i])) ? 1 : 0;
+					total += (TINYINPUT.keyHeld(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -492,7 +492,7 @@ var INPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (INPUT.keyPressed(arguments[i])) ? 1 : 0;
+					total += (TINYINPUT.keyPressed(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -517,7 +517,7 @@ var INPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (INPUT.mouseButtonHeld(arguments[i])) ? 1 : 0;
+					total += (TINYINPUT.mouseButtonHeld(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -538,7 +538,7 @@ var INPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (INPUT.mouseButtonPressed(arguments[i])) ? 1 : 0;
+					total += (TINYINPUT.mouseButtonPressed(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
