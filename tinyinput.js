@@ -1,4 +1,4 @@
-var TINYINPUT = (function() {
+var TI = (function() {
 	
 	/**
 	 * Boolean value to preventDefault() the input actions.
@@ -119,7 +119,7 @@ var TINYINPUT = (function() {
 			flaggedButtons[i] = false;
 		}
 		
-		TINYINPUT.KEYSTRINGS = {
+		TI.KEYSTRINGS = {
 			"backspace":       8,
 			"tab":             9,
 			"enter":          13,
@@ -223,116 +223,116 @@ var TINYINPUT = (function() {
 			"apostrophe":    222
 		};
 		
-		TINYINPUT.KEY_BACKSPACE            =   8;
-		TINYINPUT.KEY_TAB                  =   9;
-		TINYINPUT.KEY_ENTER                =  13;
-		TINYINPUT.KEY_SHIFT                =  16;
-		TINYINPUT.KEY_CTRL                 =  17;
-		TINYINPUT.KEY_ALT                  =  18;
-		TINYINPUT.KEY_PAUSE_BREAK          =  19;
-		TINYINPUT.KEY_CAPS_LOCK            =  20;
-		TINYINPUT.KEY_ESC                  =  27;
-		TINYINPUT.KEY_SPACE                =  32;
-		TINYINPUT.KEY_PAGE_UP              =  33;
-		TINYINPUT.KEY_PAGE_DOWN            =  34;
-		TINYINPUT.KEY_END                  =  35;
-		TINYINPUT.KEY_HOME                 =  36;
-		TINYINPUT.KEY_LEFT                 =  37;
-		TINYINPUT.KEY_UP                   =  38;
-		TINYINPUT.KEY_RIGHT                =  39;
-		TINYINPUT.KEY_DOWN                 =  40;
-		TINYINPUT.KEY_INSERT               =  45;
-		TINYINPUT.KEY_DELETE               =  46;
-		TINYINPUT.KEY_0                    =  48;
-		TINYINPUT.KEY_1                    =  49;
-		TINYINPUT.KEY_2                    =  50;
-		TINYINPUT.KEY_3                    =  51;
-		TINYINPUT.KEY_4                    =  52;
-		TINYINPUT.KEY_5                    =  53;
-		TINYINPUT.KEY_6                    =  54;
-		TINYINPUT.KEY_7                    =  55;
-		TINYINPUT.KEY_8                    =  56;
-		TINYINPUT.KEY_9                    =  57;
-		TINYINPUT.KEY_A                    =  65;
-		TINYINPUT.KEY_B                    =  66;
-		TINYINPUT.KEY_C                    =  67;
-		TINYINPUT.KEY_D                    =  68;
-		TINYINPUT.KEY_E                    =  69;
-		TINYINPUT.KEY_F                    =  70;
-		TINYINPUT.KEY_G                    =  71;
-		TINYINPUT.KEY_H                    =  72;
-		TINYINPUT.KEY_I                    =  73;
-		TINYINPUT.KEY_J                    =  74;
-		TINYINPUT.KEY_K                    =  75;
-		TINYINPUT.KEY_L                    =  76;
-		TINYINPUT.KEY_M                    =  77;
-		TINYINPUT.KEY_N                    =  78;
-		TINYINPUT.KEY_O                    =  79;
-		TINYINPUT.KEY_P                    =  80;
-		TINYINPUT.KEY_Q                    =  81;
-		TINYINPUT.KEY_R                    =  82;
-		TINYINPUT.KEY_S                    =  83;
-		TINYINPUT.KEY_T                    =  84;
-		TINYINPUT.KEY_U                    =  85;
-		TINYINPUT.KEY_V                    =  86;
-		TINYINPUT.KEY_W                    =  87;
-		TINYINPUT.KEY_X                    =  88;
-		TINYINPUT.KEY_Y                    =  89;
-		TINYINPUT.KEY_Z                    =  90;
-		TINYINPUT.KEY_WINDOWS              =  91;
-		TINYINPUT.KEY_RIGHT_CLICK          =  93;
-		TINYINPUT.KEY_NUMPAD_0             =  96;
-		TINYINPUT.KEY_NUMPAD_1             =  97;
-		TINYINPUT.KEY_NUMPAD_2             =  98;
-		TINYINPUT.KEY_NUMPAD_3             =  99;
-		TINYINPUT.KEY_NUMPAD_4             = 100;
-		TINYINPUT.KEY_NUMPAD_5             = 101;
-		TINYINPUT.KEY_NUMPAD_6             = 102;
-		TINYINPUT.KEY_NUMPAD_7             = 103;
-		TINYINPUT.KEY_NUMPAD_8             = 104;
-		TINYINPUT.KEY_NUMPAD_9             = 105;
-		TINYINPUT.KEY_NUMPAD_STAR          = 106;
-		TINYINPUT.KEY_NUMPAD_PLUS          = 107;
-		TINYINPUT.KEY_NUMPAD_MINUS         = 109;
-		TINYINPUT.KEY_NUMPAD_PERIOD        = 110;
-		TINYINPUT.KEY_NUMPAD_FORWARD_SLASH = 111;
-		TINYINPUT.KEY_F1                   = 112;
-		TINYINPUT.KEY_F2                   = 113;
-		TINYINPUT.KEY_F3                   = 114;
-		TINYINPUT.KEY_F4                   = 115;
-		TINYINPUT.KEY_F5                   = 116;
-		TINYINPUT.KEY_F6                   = 117;
-		TINYINPUT.KEY_F7                   = 118;
-		TINYINPUT.KEY_F8                   = 119;
-		TINYINPUT.KEY_F9                   = 120;
-		TINYINPUT.KEY_F10                  = 121;
-		TINYINPUT.KEY_F11                  = 122;
-		TINYINPUT.KEY_F12                  = 123;
-		TINYINPUT.KEY_NUM_LOCK             = 144;
-		TINYINPUT.KEY_SCROLL_LOCK          = 145;
-		TINYINPUT.KEY_COMPUTER             = 182;
-		TINYINPUT.KEY_CALCULATOR           = 183;
-		TINYINPUT.KEY_SEMICOLON            = 186;
-		TINYINPUT.KEY_EQUALS               = 187;
-		TINYINPUT.KEY_COMMA                = 188;
-		TINYINPUT.KEY_DASH                 = 189;
-		TINYINPUT.KEY_PERIOD               = 190;
-		TINYINPUT.KEY_FORWARD_SLASH        = 191;
-		TINYINPUT.KEY_TICK                 = 192;
-		TINYINPUT.KEY_SQUARE_LEFT          = 219;
-		TINYINPUT.KEY_BACKSLASH            = 220;
-		TINYINPUT.KEY_SQUARE_RIGHT         = 221;
-		TINYINPUT.KEY_APOSTROPHE           = 222;
+		TI.KEY_BACKSPACE            =   8;
+		TI.KEY_TAB                  =   9;
+		TI.KEY_ENTER                =  13;
+		TI.KEY_SHIFT                =  16;
+		TI.KEY_CTRL                 =  17;
+		TI.KEY_ALT                  =  18;
+		TI.KEY_PAUSE_BREAK          =  19;
+		TI.KEY_CAPS_LOCK            =  20;
+		TI.KEY_ESC                  =  27;
+		TI.KEY_SPACE                =  32;
+		TI.KEY_PAGE_UP              =  33;
+		TI.KEY_PAGE_DOWN            =  34;
+		TI.KEY_END                  =  35;
+		TI.KEY_HOME                 =  36;
+		TI.KEY_LEFT                 =  37;
+		TI.KEY_UP                   =  38;
+		TI.KEY_RIGHT                =  39;
+		TI.KEY_DOWN                 =  40;
+		TI.KEY_INSERT               =  45;
+		TI.KEY_DELETE               =  46;
+		TI.KEY_0                    =  48;
+		TI.KEY_1                    =  49;
+		TI.KEY_2                    =  50;
+		TI.KEY_3                    =  51;
+		TI.KEY_4                    =  52;
+		TI.KEY_5                    =  53;
+		TI.KEY_6                    =  54;
+		TI.KEY_7                    =  55;
+		TI.KEY_8                    =  56;
+		TI.KEY_9                    =  57;
+		TI.KEY_A                    =  65;
+		TI.KEY_B                    =  66;
+		TI.KEY_C                    =  67;
+		TI.KEY_D                    =  68;
+		TI.KEY_E                    =  69;
+		TI.KEY_F                    =  70;
+		TI.KEY_G                    =  71;
+		TI.KEY_H                    =  72;
+		TI.KEY_I                    =  73;
+		TI.KEY_J                    =  74;
+		TI.KEY_K                    =  75;
+		TI.KEY_L                    =  76;
+		TI.KEY_M                    =  77;
+		TI.KEY_N                    =  78;
+		TI.KEY_O                    =  79;
+		TI.KEY_P                    =  80;
+		TI.KEY_Q                    =  81;
+		TI.KEY_R                    =  82;
+		TI.KEY_S                    =  83;
+		TI.KEY_T                    =  84;
+		TI.KEY_U                    =  85;
+		TI.KEY_V                    =  86;
+		TI.KEY_W                    =  87;
+		TI.KEY_X                    =  88;
+		TI.KEY_Y                    =  89;
+		TI.KEY_Z                    =  90;
+		TI.KEY_WINDOWS              =  91;
+		TI.KEY_RIGHT_CLICK          =  93;
+		TI.KEY_NUMPAD_0             =  96;
+		TI.KEY_NUMPAD_1             =  97;
+		TI.KEY_NUMPAD_2             =  98;
+		TI.KEY_NUMPAD_3             =  99;
+		TI.KEY_NUMPAD_4             = 100;
+		TI.KEY_NUMPAD_5             = 101;
+		TI.KEY_NUMPAD_6             = 102;
+		TI.KEY_NUMPAD_7             = 103;
+		TI.KEY_NUMPAD_8             = 104;
+		TI.KEY_NUMPAD_9             = 105;
+		TI.KEY_NUMPAD_STAR          = 106;
+		TI.KEY_NUMPAD_PLUS          = 107;
+		TI.KEY_NUMPAD_MINUS         = 109;
+		TI.KEY_NUMPAD_PERIOD        = 110;
+		TI.KEY_NUMPAD_FORWARD_SLASH = 111;
+		TI.KEY_F1                   = 112;
+		TI.KEY_F2                   = 113;
+		TI.KEY_F3                   = 114;
+		TI.KEY_F4                   = 115;
+		TI.KEY_F5                   = 116;
+		TI.KEY_F6                   = 117;
+		TI.KEY_F7                   = 118;
+		TI.KEY_F8                   = 119;
+		TI.KEY_F9                   = 120;
+		TI.KEY_F10                  = 121;
+		TI.KEY_F11                  = 122;
+		TI.KEY_F12                  = 123;
+		TI.KEY_NUM_LOCK             = 144;
+		TI.KEY_SCROLL_LOCK          = 145;
+		TI.KEY_COMPUTER             = 182;
+		TI.KEY_CALCULATOR           = 183;
+		TI.KEY_SEMICOLON            = 186;
+		TI.KEY_EQUALS               = 187;
+		TI.KEY_COMMA                = 188;
+		TI.KEY_DASH                 = 189;
+		TI.KEY_PERIOD               = 190;
+		TI.KEY_FORWARD_SLASH        = 191;
+		TI.KEY_TICK                 = 192;
+		TI.KEY_SQUARE_LEFT          = 219;
+		TI.KEY_BACKSLASH            = 220;
+		TI.KEY_SQUARE_RIGHT         = 221;
+		TI.KEY_APOSTROPHE           = 222;
 		
-		TINYINPUT.BUTTONSTRINGS = {
+		TI.BUTTONSTRINGS = {
 			"left":   0,
 			"middle": 1,
 			"right":  2
 		}
 		
-		TINYINPUT.BUTTON_LEFT   = 0;
-		TINYINPUT.BUTTON_MIDDLE = 1;
-		TINYINPUT.BUTTON_RIGHT  = 2;
+		TI.BUTTON_LEFT   = 0;
+		TI.BUTTON_MIDDLE = 1;
+		TI.BUTTON_RIGHT  = 2;
 	}
 	
 	/**
@@ -346,7 +346,7 @@ var TINYINPUT = (function() {
 	function getValidKey(key) {
 		var keyvalue = -1;
 		if (typeof key === "string") {
-			keyvalue = TINYINPUT.KEYSTRINGS[key];
+			keyvalue = TI.KEYSTRINGS[key];
 			if (!keyvalue) {
 				throw new Error("Key \"" + key + "\" is not valid");
 				return -1;
@@ -371,7 +371,7 @@ var TINYINPUT = (function() {
 	*/
 	function getValidButton(button) {
 		if (typeof button === "string") {
-			button = TINYINPUT.BUTTONSTRINGS[button];
+			button = TI.BUTTONSTRINGS[button];
 		}
 		if ((-1 < button && button < 3) == false) {
 			throw new Error("Unknown button: " + button);
@@ -471,7 +471,7 @@ var TINYINPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (TINYINPUT.keyHeld(arguments[i])) ? 1 : 0;
+					total += (TI.keyHeld(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -492,7 +492,7 @@ var TINYINPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (TINYINPUT.keyPressed(arguments[i])) ? 1 : 0;
+					total += (TI.keyPressed(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -517,7 +517,7 @@ var TINYINPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (TINYINPUT.mouseButtonHeld(arguments[i])) ? 1 : 0;
+					total += (TI.mouseButtonHeld(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -538,7 +538,7 @@ var TINYINPUT = (function() {
 			if (arguments.length > 1) {
 				var total = 0;
 				for (var i = 0; i < arguments.length; i++) {
-					total += (TINYINPUT.mouseButtonPressed(arguments[i])) ? 1 : 0;
+					total += (TI.mouseButtonPressed(arguments[i])) ? 1 : 0;
 				}
 				return (total == arguments.length) ? true : false;
 			}
@@ -560,6 +560,17 @@ var TINYINPUT = (function() {
 		getMousePosition: function() {
 			return mousePosition;
 		},
+		
+		/**
+		 * Set the mouse position manually. Usually used to set a default mouse position.
+		 * @param {Number} x X position of the mouse.
+		 * @param {Number} y Y position of the mouse.
+		 * @since 0.2
+		*/
+		setMousePosition: function(x, y) {
+			mousePosition.x = x;
+			mousePosition.y = y;
+		}
 		
 	}
 	
